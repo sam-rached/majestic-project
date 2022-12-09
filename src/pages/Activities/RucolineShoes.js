@@ -1,10 +1,11 @@
 import React from 'react';
 import "./RucolineShoes.css";
+import TitleText from "../../components/TitleText/TitleText";
 
 function RucolineShoes() {
   return (
     <div className='rucolineShoes'>
-      <h1>RUCOLINE SHOES</h1>
+     <TitleText title="rucoline shoes"/>
     </div>
   )
 }

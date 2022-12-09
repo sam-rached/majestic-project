@@ -1,11 +1,12 @@
 import React from 'react';
 import Slider from '../../components/Slider/Slider';
+import TitleText from '../../components/TitleText/TitleText';
 import './AboutUs.css';
 
 function AboutUs() {
   return (
     <div className='aboutUs'>
-      <h1>ABOUT US</h1>
+     <TitleText title="about us" />
       <Slider/>
     </div>
   )

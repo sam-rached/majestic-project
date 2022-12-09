@@ -1,10 +1,11 @@
 import React from 'react'
 import "./LadiesFashion.css"
+import TitleText from "../../components/TitleText/TitleText";
 
 function LadiesFashion() {
   return (
     <div className='ladiesFashion'>
-      <h1>LADIES FASHION</h1>
+     <TitleText title="ladies fashion" />
     </div>
   )
 }

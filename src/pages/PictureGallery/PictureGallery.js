@@ -1,10 +1,11 @@
 import React from 'react';
 import './PictureGallery.css';
+import TitleText from "../../components/TitleText/TitleText";
 
 function PictureGallery() {
   return (
     <div className='pictureGallery'>
-      <h1>PICTURE GALLERY</h1>
+      <TitleText title="picture gallery" />
     </div>
   )
 }

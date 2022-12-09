@@ -1,10 +1,11 @@
 import React from 'react';
 import './ContactUs.css';
+import TitleText from "../../components/TitleText/TitleText";
 
 function ContactUs() {
   return (
     <div className='contactUs'>
-      <h1>CONTACT US</h1>
+     <TitleText title="contact us" />
     </div>
   )
 }

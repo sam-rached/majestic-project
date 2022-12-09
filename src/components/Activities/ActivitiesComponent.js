@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Activities() {
+function ActivitiesComponent() {
   return (
-    <div className='activities'>
+    <div className='activitiesComponent'>
       <div className="wrapper">
         
       </div>

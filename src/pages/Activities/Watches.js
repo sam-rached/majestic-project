@@ -1,10 +1,11 @@
 import React from 'react';
 import './Watches.css';
+import TitleText from "../../components/TitleText/TitleText";
 
 function Watches() {
   return (
     <div className='watches'>
-      <h1>WATCHES</h1>
+     <TitleText title="watches"/>
     </div>
   )
 }

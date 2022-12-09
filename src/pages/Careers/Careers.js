@@ -1,10 +1,11 @@
 import React from 'react'
 import './Careers.css'
+import TitleText from "../../components/TitleText/TitleText";
 
 function Careers() {
   return (
     <div className='careers'>
-      <h1>CAREERS</h1>
+     <TitleText title="careers" />
     </div>
   )
 }

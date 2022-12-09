@@ -1,68 +1,71 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import "./Slider.css"
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
+import "./Slider.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation, Zoom } from "swiper";
+import { Autoplay, Pagination, EffectFade } from "swiper";
 
 function Slider() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        spaceBetween={50}
         autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
+          delay: 3500
         }}
-        zoom={true}
         loop={true}
+        Effect={"fade"}
         pagination={{
           clickable: true,
         }}
-        navigation={false}
-        modules={[Zoom, Autoplay, Pagination, Navigation]}
-        // className="mySwiper"
+        modules={[Autoplay, Pagination, EffectFade]}
+        className="mySwiper"
       >
         <SwiperSlide>
-          <div className="swiper-zoom-container">
-            <img
-              src={
-                process.env.PUBLIC_URL + `/imgs/Balmain-Paris-1-1536x864.jpeg`
-              }
-              alt="img"
-            />
-          </div>
+          <img
+            src={process.env.PUBLIC_URL + `/imgs/Banner-Home-1.jpg`}
+            alt="img"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="swiper-zoom-container">
-            <img src={process.env.PUBLIC_URL + `/imgs/1.jpg`} alt="img" />
-          </div>
+          <img
+            src={process.env.PUBLIC_URL + `/imgs/Banner-Home-2.jpg`}
+            alt="img"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="swiper-zoom-container">
-            <img
-              src={process.env.PUBLIC_URL + `/imgs/majestic_angels_store.jpg`}
-              alt="img"
-            />
-          </div>
+          <img
+            src={process.env.PUBLIC_URL + `/imgs/Banner-Home-3.jpg`}
+            alt="img"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="swiper-zoom-container">
-            <img
-              src={process.env.PUBLIC_URL + `/imgs/rucoline_store.jpg`}
-              alt="img"
-            />
-          </div>
+          <img
+            src={process.env.PUBLIC_URL + `/imgs/Banner-Home-4.jpg`}
+            alt="img"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={process.env.PUBLIC_URL + `/imgs/Banner-Home-5.jpg`}
+            alt="img"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={process.env.PUBLIC_URL + `/imgs/Banner-Home-6.jpg`}
+            alt="img"
+          />
         </SwiperSlide>
       </Swiper>
     </>
   );
 }
 
-export default Slider
+export default Slider;

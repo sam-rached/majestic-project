@@ -13,17 +13,21 @@ function Navbar() {
 
         if (!click){
             setClick(!click);
-        }
+        };
+
+        hideMenu()
     }
 
     const handleClick = () => setClick(!click);
 
     const hideMenu=()=>{
-      const menu = document.getElementById('menu');
-      menu.addEventListener('mouseleave',()=>{
+      const menuTab = document.getElementById('menu');
+      menuTab.addEventListener('mouseleave',()=>{
         setMenu(true);
       })
     }
+    
+  
 
 
   return (
