@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import MainTitle from "../../assets/images/majestic-logo-2x-370x69-alpha.png";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -7,8 +8,22 @@ function Navbar() {
     const [click, setClick] = useState(true);
     const [menu, setMenu]=useState(true);
 
-    const handleMenu =()=> setMenu(!menu);
+    const handleMenu =()=> {
+        setMenu(!menu);
+
+        if (!click){
+            setClick(!click);
+        }
+    }
+
     const handleClick = () => setClick(!click);
+
+    const hideMenu=()=>{
+      const menu = document.getElementById('menu');
+      menu.addEventListener('mouseleave',()=>{
+        setMenu(true);
+      })
+    }
 
 
   return (
@@ -22,22 +37,22 @@ function Navbar() {
         <div className="right__header">
           <ul>
             <li>
-              <a href="">Stores</a>
+              <NavLink to="stores">Stores</NavLink>
             </li>
             <li>
-              <a href="">About Us</a>
+              <NavLink to="contactUs">Contact Us</NavLink>
             </li>
           </ul>
         </div>
       </header>
       <nav className={menu ? "nav" : "nav active"}>
-        <div className="nav__menu">
+        <div id="menu" className="nav__menu">
           <ul>
             <li>
-              <a href="#home">home</a>
+              <NavLink to="/">home</NavLink>
             </li>
             <li>
-              <a href="#about us">about us</a>
+              <NavLink to="aboutUs">about us</NavLink>
             </li>
             <button
               onClick={handleClick}
@@ -45,43 +60,39 @@ function Navbar() {
             >
               activities
             </button>
-            <div
-              className={
-                click ? "accordion__content" : "accordion__content active"
-              }
-            >
+            <div className={click ? "accordion__content" : "accordion__content active"}>
               <ul>
                 <li>
-                  <a href="#ladies_fashion">ladies fashion</a>
+                  <NavLink to="ladiesFashion">ladies fashion</NavLink>
                 </li>
                 <li>
-                  <a href="#kids_fashion">kids fashion</a>
+                  <NavLink to="kidsFashion">kids fashion</NavLink>
                 </li>
                 <li>
-                  <a href="#mens_fashion">mens fashion</a>
+                  <NavLink to="mensFashion">mens fashion</NavLink>
                 </li>
                 <li>
-                  <a href="#watches">watches</a>
+                  <NavLink to="watches">watches</NavLink>
                 </li>
                 <li>
-                  <a href="#rucoline_shoes">rucoline shoes</a>
+                  <NavLink to="rucolineShoes">rucoline shoes</NavLink>
                 </li>
               </ul>
             </div>
             <li>
-              <a href="#stores">stores</a>
+              <NavLink to="stores">stores</NavLink>
             </li>
             <li>
-              <a href="#picture_gallery">picture gallery</a>
+              <NavLink to="pictureGallery">picture gallery</NavLink>
             </li>
             <li>
-              <a href="#news">news</a>
+              <NavLink to="news">news</NavLink>
             </li>
             <li>
-              <a href="#careers">careers</a>
+              <NavLink to="careers">careers</NavLink>
             </li>
             <li>
-              <a href="#contact_us">contact us</a>
+              <NavLink to="contactUs">contact us</NavLink>
             </li>
           </ul>
         </div>
