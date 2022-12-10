@@ -3,8 +3,10 @@ import React from 'react'
 function ActivitiesComponent() {
   return (
     <div className='activitiesComponent'>
-      <div className="wrapper">
+      <div className="activities__list">
+        <div className='activity__box'>
         
+        </div>
       </div>
     </div>
   )
