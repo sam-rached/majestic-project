@@ -1,0 +1,44 @@
+.activitiesComponent{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    background-color: red;
+    /* box-sizing: hidden; */
+}
+
+.activities__list{
+    display:flex;
+  
+}
+.activity__box{
+display: flex;
+      justify-content: center;
+   flex-wrap: wrap;
+   flex-grow: 1;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: aquamarine;
+}
+
+.activity__box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+filter: sepia(80%);
+transition: filter 0.4s;
+}
+
+.activity__box img:hover{
+filter: sepia(0%);
+}
+
+.activity__box .box__information{
+    width: 100%;
+    font-family: 'Questrial';
+    font-size: 1rem;
+    font-weight: 600;
+}
+
