@@ -3,6 +3,7 @@ import './InformationsComponent.css';
 import MainTitle from "../../assets/images/majestic-logo-1x.jpg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Map from "../Map/Map"
 
 function InformationsComponent() {
   return (
@@ -101,6 +102,10 @@ function InformationsComponent() {
             </details>
           </li>
         </ul>
+      </section>
+      <section className="map">
+        <h2>MAP</h2>
+        <Map />
       </section>
     </div>
   );
