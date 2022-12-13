@@ -1,25 +1,50 @@
 .informationsComponent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:90%;
     height: 40vh;
     margin: 10px auto;
     background-color: rgba(0, 255, 255, 0.433);
 }
 
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    background-color: brown;
+    box-sizing: border-box;
+}
 .aboutus{
-    /* background-color: red; */
+    position: relative;
     width: 30%; 
-    border:1px solid black;
+   
+}
+
+h2{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .aboutus img{
+    margin-left: 10px;
     padding: 15px;
-    width:100%;
+    width:15vw;
 }
 
 .aboutus p{
-    margin-left: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 5px 20px;
-    font-size: 14px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
     text-align: left;
 }
 
@@ -30,5 +55,32 @@
 }
 .iconList > a{
     margin: 5px;
-    background-color: 
+    background-color: green
+}
+
+.activities{
+    border: 1px solid black;
+     width: 30%; 
+    
+}
+
+.box__list{
+    margin:0 auto;
+    padding: 20px;
+    width: 15vw;
+    height: auto;
+    background-color: aqua;
+   box-sizing: border-box;
+}
+
+li > details{
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+}
+
+details p{
+     font-family: 'Questrial', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: justify;
 }
