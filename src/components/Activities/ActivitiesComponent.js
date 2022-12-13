@@ -16,7 +16,6 @@ function ActivitiesComponent() {
               alt="activity picture"
             />
           </NavLink>
-          <div className="box__information">Ladies Fashion</div>
         </div>
         <div className="activity__box">
           <NavLink to="kidsFashion">
@@ -28,7 +27,6 @@ function ActivitiesComponent() {
               alt="activity picture"
             />
           </NavLink>
-          <div className="box__information">Kids Fashion</div>
         </div>
         <div className="activity__box">
           <NavLink to="mensFashion">
@@ -40,7 +38,6 @@ function ActivitiesComponent() {
               alt="activity picture"
             />
           </NavLink>
-          <div className="box__information">Mens Fashion</div>
         </div>
         <div className="activity__box">
           <NavLink to="watches">
@@ -52,7 +49,6 @@ function ActivitiesComponent() {
               alt="activity picture"
             />
           </NavLink>
-          <div className="box__information">Watches</div>
         </div>
         <div className="activity__box">
           <NavLink to="rucolineShoes">
@@ -64,7 +60,6 @@ function ActivitiesComponent() {
               alt="activity picture"
             />
           </NavLink>
-          <div className="box__information">Rucoline Shoes</div>
         </div>
       </div>
     </div>

@@ -1,18 +1,19 @@
 .titleText{
     display: inline-block;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 2vh;
    text-align: center;
 }
 
 .titleText  h1{
 font-family: 'Montserrat', sans-serif;
-font-size: 50px;
-line-height: 50px;
+font-size: 5vw;
 font-weight: 600;
+letter-spacing: -0.2vw;
 background:url('../../assets/images/bg_font.jpg') repeat;
  background-clip: text;
 -webkit-background-clip: text;
 color: transparent;
 text-transform: uppercase;
 }
+
