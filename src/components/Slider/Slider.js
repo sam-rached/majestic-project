@@ -20,7 +20,7 @@ function Slider() {
           delay: 3500
         }}
         loop={true}
-        Effect={"fade"}
+        effect={"fade"}
         pagination={{
           clickable: true,
         }}

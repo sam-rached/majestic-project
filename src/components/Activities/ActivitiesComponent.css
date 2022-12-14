@@ -8,7 +8,7 @@
 .activities__list{
     display:inherit;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 1.2vmin;
     margin-top: 10px;
 }

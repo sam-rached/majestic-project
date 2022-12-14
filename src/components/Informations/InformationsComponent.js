@@ -1,11 +1,27 @@
-import React from 'react';
-import './InformationsComponent.css';
+import React, {useEffect} from "react";
+import "./InformationsComponent.css";
 import MainTitle from "../../assets/images/majestic-logo-1x.jpg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import Map from "../Map/Map"
+import Map from "../Map/Map";
 
 function InformationsComponent() {
+
+  useEffect(() => {
+    const details = document.querySelectorAll("details");
+  
+    details.forEach((targetDetail) => {
+      targetDetail.addEventListener("click", () => {
+        details.forEach((detail) => {
+          if (detail !== targetDetail) {
+            detail.removeAttribute("open");
+          }
+        });
+      });
+    });
+  
+  }, [])
+  
   return (
     <div className="informationsComponent">
       <section className="aboutus">
@@ -35,7 +51,7 @@ function InformationsComponent() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FacebookIcon />
+            <TwitterIcon />
           </a>
           <a
             href="https://www.facebook.com/PREV33/"
@@ -111,4 +127,4 @@ function InformationsComponent() {
   );
 }
 
-export default InformationsComponent
+export default InformationsComponent;
