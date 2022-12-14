@@ -103,8 +103,8 @@ function InformationsComponent() {
           </li>
         </ul>
       </section>
-      <section className="map">
-        <h2>MAP</h2>
+      <section className="map__content">
+        <h2>LOCATE US</h2>
         <Map />
       </section>
     </div>

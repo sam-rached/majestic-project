@@ -8,9 +8,9 @@ mapboxgl.accessToken =
 
 export default function Map() {
   const mapContainer = useRef(null);
-  const [lng, setLng] = useState(-0.6963224);
-  const [lat, setLat] = useState(44.8867549);
-  const [zoom, setZoom] = useState(18);
+  const [lng, setLng] = useState(55.32188);
+  const [lat, setLat] = useState(25.26452);
+  const [zoom, setZoom] = useState(15);
 
   useEffect(() => {
     const map = new mapboxgl.Map({
@@ -26,7 +26,7 @@ export default function Map() {
       .setLngLat([lng, lat])
       .setPopup(
         new mapboxgl.Popup().setHTML(
-          "<style> h2,h3 {text-align:center}</style><h2>Prev33</h2><h3>24 Av. René Descartes</br> 33160 Saint-Médard-en-Jalles</h3><h3>tel: 06 95 23 18 73</h3>"
+          "<style> p {text-align:left}</style><p><strong>International Business Group</strong></p><p><small>Sheikh Ahmad Building - Al Maktoum</small></br><small> Rd - Deira - Dubai - Émirats arabes unis</small>"
         )
       )
       .addTo(map);
