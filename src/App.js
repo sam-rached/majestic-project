@@ -13,6 +13,7 @@ import KidsFashion from "./pages/Activities/KidsFashion";
 import MensFashion from "./pages/Activities/MensFashion";
 import Watches from "./pages/Activities/Watches";
 import RucolineShoes from "./pages/Activities/RucolineShoes";
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="careers" element={<Careers />} />
         <Route path="contactUs" element={<ContactUs />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

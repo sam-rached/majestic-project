@@ -8,6 +8,7 @@ function Navbar() {
     const [click, setClick] = useState(true);
     const [menu, setMenu]=useState(true);
 
+    
     const handleMenu =()=> {
         setMenu(!menu);
 
@@ -26,12 +27,21 @@ function Navbar() {
         setMenu(true);
       })
     }
+
+    const scrollTop=()=>{
+      const navbar = document.querySelector(".navbar");
+      const {scrollTop, scrollHeight, clientHeight}=document.documentElement;
+
+
+    
+
+    }
     
   
 
 
   return (
-    <div className="navbar">
+    <div className="navbar" onChange={scrollTop}>
       <header className="header">
         <div onClick={handleMenu} className="menu__header">
           <MenuIcon />
@@ -64,7 +74,11 @@ function Navbar() {
             >
               activities
             </button>
-            <div className={click ? "accordion__content" : "accordion__content active"}>
+            <div
+              className={
+                click ? "accordion__content" : "accordion__content active"
+              }
+            >
               <ul>
                 <li>
                   <NavLink to="ladiesFashion">ladies fashion</NavLink>

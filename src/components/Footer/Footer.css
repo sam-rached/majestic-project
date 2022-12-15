@@ -1,0 +1,30 @@
+.footer{
+    height: 60px;
+    background-color: var(--bg-color-light);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:calc(0.2 vmin + 11px);
+    font-weight: 500;
+    z-index: 100;
+  color:var(--text-color-grey);
+background: #000;
+}
+
+.footer__wrapper{
+    display: flex;
+   justify-content: space-between;
+  align-items: center;
+}
+
+.copyright{
+    margin-left: 3%;
+}
+
+.designed{
+  
+    margin-right: 3%;
+}
+.nav__top{
+    position: absolute;
+    right: 10px;
+}

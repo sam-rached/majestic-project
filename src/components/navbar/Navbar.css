@@ -1,7 +1,7 @@
 .navbar{
     height: 85px;
     background-color: var(--bg-color-light);
-    position: fixed;
+    position:relative;
     top: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
