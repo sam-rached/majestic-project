@@ -13,8 +13,7 @@ section{
     margin: 10px;
     width: 90%;
     height: 90%;
-    box-sizing: border-box;
-     border:1px solid black;
+    border:1px solid black;
 }
 
 h2{
@@ -28,6 +27,7 @@ h2{
     margin-left: 10px;
     padding: 15px;
     width:15vw;
+    
 }
 
 .aboutus p{
@@ -58,9 +58,10 @@ h2{
 
 .box__list{
     margin: 0 auto;
-    padding: 20px;
-    width: 15vw;
+    padding: 15px;
+    width: 25vw;
     height: 30vh;
+    overflow: hidden;
         }
 
 li > details{
@@ -75,7 +76,9 @@ details p{
      font-family: 'Questrial', sans-serif;
     font-size: 12px;
     font-weight: 700;
-    text-align: justify;
+    text-align: left;
+    padding-left: 16px;
+    line-height: 1rem;
 
 }
 

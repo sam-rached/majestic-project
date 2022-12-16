@@ -2,7 +2,7 @@
     height: 85px;
     background-color: var(--bg-color-light);
     position:relative;
-    top: 0;
+    /* top: 0; */
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
