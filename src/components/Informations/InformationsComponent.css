@@ -36,8 +36,8 @@ h2{
     margin-right: auto;
     padding: 10px 5px 20px;
     font-family: 'Questrial', sans-serif;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: calc(0.8vmin + 12px);
+    line-height: 26px;
     text-align: left;
 }
 
@@ -48,7 +48,6 @@ h2{
 
 .iconList > a{
     margin: 5px;
-
 }
 
 .aboutus, .activities, .map__content{
@@ -66,19 +65,22 @@ h2{
 
 li > details{
     font-family: 'Questrial', sans-serif;
-    font-size: 16px;
+    font-size: calc(1vmin + 13px);
+    line-height: 25px;
+    font-weight: 600;
     cursor:pointer;
     margin-bottom: 5px;
+    padding: 5px 10px;
     color:var(--text-color-dark)
 }
 
 details p{
      font-family: 'Questrial', sans-serif;
-    font-size: 12px;
+    font-size: calc(0.5vmin + 11px);
     font-weight: 700;
     text-align: left;
     padding-left: 16px;
-    line-height: 1rem;
+    line-height: 1.5rem;
 
 }
 
