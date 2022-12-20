@@ -3,6 +3,13 @@ import './Footer.css';
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 
 function Footer() {
+
+  const onTop =()=>{
+    const {scrollTop}= document.documentElement;
+
+   console.log(scrollTop);
+  }
+
   return (
     <div className="footer">
       <div className="footer__wrapper">
@@ -17,7 +24,7 @@ function Footer() {
           <p>Designed by samirached.com</p>
         </div>
       </div>
-        <div className="nav__top">
+        <div className="nav__top" onClick={onTop}>
           
             <ArrowCircleUpIcon />
         

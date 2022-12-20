@@ -3,6 +3,7 @@
 :root {
   --text-color-grey: #696969;
   --text-color-dark: #000;
+   --text-color-light: #fff;
   --text-color-lightdark: #111;
   --bg-color-light: #fff;
   --theme-color-logo: #ff851b;

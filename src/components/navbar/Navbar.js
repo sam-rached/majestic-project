@@ -27,27 +27,7 @@ function Navbar() {
     });
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", hideTop);
-
-    return () => {
-      window.removeEventListener("scroll", hideTop);
-    };
-  }, []);
-
-  const hideTop = () => {
-const {scrollTop} = document.documentElement;
-const navbar = document.querySelector('.navbar');
-const headerRight = document.querySelector('.right__header');
-console.log(scrollTop);
-    if (scrollTop > 24) {
-      headerRight.style.position='fixed';
-    }
-    else{
-        headerRight.style.position = "block";
-    }
-  };
-
+  
   return (
     <div className="navbar">
       <header className="header">
