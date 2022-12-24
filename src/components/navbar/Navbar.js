@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import MainTitle from "../../assets/images/majestic-logo-2x-370x69-alpha.png";
@@ -46,7 +46,9 @@ function Navbar() {
             <MenuIcon />
             <button className="button__menu">Menu</button>
           </div>
-          <img className="main__title" src={MainTitle} alt="logo" />
+          <NavLink className="logo" to="/">
+            <img className="main__title" src={MainTitle} alt="logo" />
+          </NavLink>
         </div>
       </header>
       <nav className={menu ? "nav" : "nav active"}>
@@ -56,7 +58,7 @@ function Navbar() {
               <NavLink to="/">home</NavLink>
             </li>
             <li>
-              <NavLink to="aboutUs">about us</NavLink>
+              <NavLink to="stores">stores</NavLink>
             </li>
             <button
               onClick={handleClick}
@@ -88,9 +90,6 @@ function Navbar() {
               </ul>
             </div>
             <li>
-              <NavLink to="stores">stores</NavLink>
-            </li>
-            <li>
               <NavLink to="pictureGallery">picture gallery</NavLink>
             </li>
             <li>
@@ -101,6 +100,9 @@ function Navbar() {
             </li>
             <li>
               <NavLink to="contactUs">contact us</NavLink>
+            </li>
+            <li>
+              <NavLink to="aboutUs">about us</NavLink>
             </li>
           </ul>
         </div>

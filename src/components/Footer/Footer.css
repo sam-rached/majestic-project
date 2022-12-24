@@ -1,36 +1,55 @@
-.footer{
-    width: 100%;
-    height: 60px;
-    background-color: var(--bg-color-light);
-    font-family: 'Montserrat', sans-serif;
-    font-size:calc(0.1vmin + 11px);
-    font-weight: 500;
-    z-index: 100;
-    color:var(--text-color-light);
-    background: #000;
-    bottom:0;
-    position:fixed;
-
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: var(--bg-color-light);
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(0.1vmin + 11px);
+  font-weight: 500;
+  z-index: 100;
+  color: var(--text-color-light);
+  background: #000;
+  position: relative;
 }
 
-.footer__wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.copyright{
-    margin-left: 3%;
-    padding-top: 5px;
+.copyright {
+  margin-left: 3%;
+  padding-top: 5px;
 }
 
-.designed{
-  
-    margin-right: 3%;
+.designed {
+  margin-right: 3%;
 }
-.nav__top{
-    position: absolute;
-    right: 10px;
-    bottom:10px;
-    cursor:pointer;
+.designed a {
+  color: var(--text-color-light);
+}
+
+.designed a:hover {
+  color: var(--text-color-grey);
+}
+
+#footer__top {
+  position: absolute;
+  top: -150px;
+  width: 5px;
+  height: 5px;
+}
+
+.footer__top {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+}
+.footer__top svg {
+  color: var(--text-color-light);
+}
+
+.footer__top svg:hover {
+  color: var(--text-color-grey);
 }

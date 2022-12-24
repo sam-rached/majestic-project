@@ -6,12 +6,13 @@ import InformationsComponent from '../../components/Informations/InformationsCom
 
 function Home() {
   return (
-    <div className='home'>
-        <Slider />
-        <ActivitiesComponent/>
-        <InformationsComponent/>
+    <div className="home">
+      <Slider />
+      <ActivitiesComponent />
+      <InformationsComponent />
+    
     </div>
-  )
+  );
 }
 
 export default Home

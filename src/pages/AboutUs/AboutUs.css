@@ -1,7 +1,49 @@
+
+.slider__wrapper{
+    width: 70%;
+    margin: 0 auto;
+   height: auto;
+}
 .aboutUs{
      text-align: center;
     top: 100px;
     width: 100%;
     height: auto;
+}
+
+.aboutUs__wrapper{
+    margin: 20px auto;
+    width: 90%;
+    position: block;
+    padding: 30px;
+}
+
+.aboutUs__wrapper > p{
+    font-family: 'Questrial', sans-serif;
+    font-size: calc(0.8vmin + 12px);
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: var(--text-color-dark);
+    margin-bottom: 30px;
+}
+
+blockquote{
+     font-family: 'Questrial', sans-serif;
+    font-size: calc(0.8vmin + 13px);
+     line-height: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+blockquote > p::before{
+    content:',,';
+    display: block;
+    font-size: 4em;
+    font-weight: 400;
+    left: 105px;
+    letter-spacing: -1.5px;
+    position: absolute;
+    top: 125.5vh;
 }
 

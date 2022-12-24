@@ -14,11 +14,15 @@ import MensFashion from "./pages/Activities/MensFashion";
 import Watches from "./pages/Activities/Watches";
 import RucolineShoes from "./pages/Activities/RucolineShoes";
 import Footer from './components/Footer/Footer';
+import MouseComponent from './components/MouseComponent.js/MouseComponent';
+
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
+      <MouseComponent/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="aboutUs" element={<AboutUs />} />

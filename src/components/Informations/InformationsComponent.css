@@ -1,5 +1,6 @@
 .informationsComponent{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     width:90%;
@@ -13,7 +14,15 @@ section{
     margin: 10px;
     width: 90%;
     height: 90%;
-    border:1px solid black;
+    /* border:1px solid black; */
+    border-radius:15px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+section:nth-child(2){
+    background: var(--bg-color-light);
 }
 
 h2{
@@ -21,6 +30,7 @@ h2{
     font-family: 'Montserrat', sans-serif;
     font-size: calc(1vw + 13px);
     font-weight: 600;
+    text-align: center;
 }
 
 .aboutus img{
@@ -54,7 +64,6 @@ h2{
         width: 30%; 
 }
 
-
 .box__list{
     margin: 0 auto;
     padding: 15px;
@@ -68,7 +77,6 @@ li > details{
     font-size: calc(1vmin + 13px);
     line-height: 25px;
     font-weight: 600;
-    cursor:pointer;
     margin-bottom: 5px;
     padding: 5px 10px;
     color:var(--text-color-dark)
@@ -84,3 +92,52 @@ details p{
 
 }
 
+.map__content{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:992px) {
+    .informationsComponent{
+   flex-direction: column;
+   width: 90%;
+   height: 90vh;
+    }
+
+    .aboutus img{
+    width:50vw;
+    
+}
+.box__list{
+    margin: 0 20px auto ;
+    width: 80vw;
+    height: 25vh;
+    padding: 0;
+        }
+
+.aboutus, .activities{
+    position: block;
+        width: 100%; 
+     
+}
+
+ .map__content{
+    width: 100%;
+  height: 100%;
+
+}
+li > details{
+    font-size: calc(1vmin + 12px);
+    line-height: 15px;
+}
+
+details p{
+     font-family: 'Questrial', sans-serif;
+    font-size: calc(0.5vmin + 10px);
+    font-weight: 700;
+    text-align: left;
+    padding-left: 16px;
+    line-height: 1.1rem;
+
+}
+}

@@ -6,20 +6,25 @@
    --text-color-light: #fff;
   --text-color-lightdark: #111;
   --bg-color-light: #fff;
+   --bg-color-text: #696969;
   --theme-color-logo: #ff851b;
+  --theme-cursor:"🧐";
 }
 
 *,
 ::before,
-::after {
+::after,ul,li {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+   cursor:none;
 }
 
 body{
-  position: relative;
+  
+  /* position:relative; */
   background-color: #9e885980;
+ overflow-x: hidden;
 }
 
 li{
