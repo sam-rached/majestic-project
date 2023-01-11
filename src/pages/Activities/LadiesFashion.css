@@ -1,6 +1,61 @@
 .ladiesFashion{
-    text-align: center;
     top: 100px;
     width: 100%;
     height: auto;
+}
+
+.slider__wrapper{
+    width: 70%;
+    margin: 0 auto;
+   height: auto;
+}
+
+.container__ladiesFashion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__trademarksLadies{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.box__trademarksLadies img{
+   width: 250px;
+    margin: 20px;
+}
+
+
+.activity__wrapper{
+    margin: 20px auto;
+    width: 70%;
+    position: block;
+    padding: 30px;
+}
+
+.activity__wrapper > p{
+    font-family: 'Questrial', sans-serif;
+    font-size: calc(0.8vmin + 12px);
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: var(--text-color-dark);
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width:992px) {
+
+.container__ladiesFashion{
+    flex-direction: column;
+}
+
+.box__trademarks img{
+   width: 150px;
+    margin: 10px;
+}
+
 }

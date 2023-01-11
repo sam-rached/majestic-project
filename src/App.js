@@ -15,30 +15,33 @@ import Watches from "./pages/Activities/Watches";
 import RucolineShoes from "./pages/Activities/RucolineShoes";
 import Footer from './components/Footer/Footer';
 import MouseComponent from './components/MouseComponent.js/MouseComponent';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 
 function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <ScrollToTop >
       <MouseComponent/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="aboutUs" element={<AboutUs />} />
-        <Route path="stores" element={<Stores />} />
-        <Route path="ladiesFashion" element={<LadiesFashion />} />
-        <Route path="kidsFashion" element={<KidsFashion />} />
-        <Route path="mensFashion" element={<MensFashion />} />
-        <Route path="watches" element={<Watches />} />
-        <Route path="rucolineShoes" element={<RucolineShoes />} />
-        <Route path="stores" element={<Stores />} />
-        <Route path="pictureGallery" element={<PictureGallery />} />
-        <Route path="news" element={<News />} />
-        <Route path="careers" element={<Careers />} />
-        <Route path="contactUs" element={<ContactUs />} />
-      </Routes>
-      <Footer />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="aboutUs" element={<AboutUs />} />
+          <Route path="stores" element={<Stores />} />
+          <Route path="ladiesFashion" element={<LadiesFashion />} />
+          <Route path="kidsFashion" element={<KidsFashion />} />
+          <Route path="mensFashion" element={<MensFashion />} />
+          <Route path="watches" element={<Watches />} />
+          <Route path="rucolineShoes" element={<RucolineShoes />} />
+          <Route path="stores" element={<Stores />} />
+          <Route path="pictureGallery" element={<PictureGallery />} />
+          <Route path="news" element={<News />} />
+          <Route path="careers" element={<Careers />} />
+          <Route path="contactUs" element={<ContactUs />} />
+        </Routes>
+        <Footer />
+      </ScrollToTop>
     </div>
   );
 }

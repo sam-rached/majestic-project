@@ -7,7 +7,7 @@ function ActivitiesComponent() {
     <div className="activitiesComponent">
       <div className="activities__list">
         <div className="activity__box">
-          <NavLink to="ladiesFashion">
+          <NavLink to="/ladiesFashion">
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -18,7 +18,7 @@ function ActivitiesComponent() {
           </NavLink>
         </div>
         <div className="activity__box">
-          <NavLink to="kidsFashion">
+          <NavLink to="/kidsFashion">
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -29,7 +29,7 @@ function ActivitiesComponent() {
           </NavLink>
         </div>
         <div className="activity__box">
-          <NavLink to="mensFashion">
+          <NavLink to="/mensFashion">
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -40,7 +40,7 @@ function ActivitiesComponent() {
           </NavLink>
         </div>
         <div className="activity__box">
-          <NavLink to="watches">
+          <NavLink to="/watches">
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -51,7 +51,7 @@ function ActivitiesComponent() {
           </NavLink>
         </div>
         <div className="activity__box">
-          <NavLink to="rucolineShoes">
+          <NavLink to="/rucolineShoes">
             <img
               src={
                 process.env.PUBLIC_URL +
